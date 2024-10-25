@@ -86,6 +86,10 @@ function blob_fixup() {
         vendor/bin/hw/dolbycodec2 | vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service | vendor/bin/hw/vendor.qti.media.c2@1.0-service)     
             "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;
+        vendor/etc/qcril_database/upgrade/config/6.0_config.sql)
+            [ "$2" = "" ] && return 0
+            sed -i '/persist.vendor.radio.redir_party_num/ s/true/false/g' "${2}"
+            ;;
         vendor/etc/camera/mondrian_enhance_motiontuning.xml|vendor/etc/camera/mondrian_motiontuning.xml)
             sed -i 's/xml=version/xml version/g' "${2}"
             ;;
