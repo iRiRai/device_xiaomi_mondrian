@@ -19,11 +19,11 @@ PRODUCT_SYSTEM_NAME := mondrian_global
 PRODUCT_SYSTEM_DEVICE := mondrian
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="mondrian_global-user 12 SKQ1.230401.001 V816.0.9.0.UMNMIXM release-keys" \
+    PRIVATE_BUILD_DESC="mondrian_global-user 12 SKQ1.230401.001 V816.0.10.0.UMNMIXM release-keys" \
     TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
-BUILD_FINGERPRINT := POCO/mondrian_global/mondrian:12/SKQ1.230401.001/V816.0.9.0.UMNMIXM:user/release-keys
+BUILD_FINGERPRINT := POCO/mondrian_global/mondrian:12/SKQ1.230401.001/V816.0.10.0.UMNMIXM:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
