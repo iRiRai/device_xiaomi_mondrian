@@ -34,7 +34,7 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #===============================================================================
 
-build_codename=`getprop vendor.media.system.build_codename`
+build_codename=`getprop ro.vendor.build.version.release_or_codename`
 
 if [ -f /sys/devices/soc0/soc_id ]; then
     soc_hwid=`cat /sys/devices/soc0/soc_id` 2> /dev/null
@@ -93,25 +93,25 @@ case "$target" in
                     setprop vendor.media.target_variant "_diwali_v1"
                 fi
 
-                if [ $build_codename -le "14" ]; then
+                if [ $build_codename -le "15" ]; then
                     setprop vendor.netflix.bsp_rev "Q7450-35705-1"
                 fi
                 ;;
             591)
                 setprop vendor.media.target_variant "_ukee"
-                if [ $build_codename -le "14" ]; then
+                if [ $build_codename -le "15" ]; then
                     setprop vendor.netflix.bsp_rev "Q8450-34634-1"
                 fi
                 ;;
             530|531|540)
                 setprop vendor.media.target_variant "_cape"
-                if [ $build_codename -le "14" ]; then
+                if [ $build_codename -le "15" ]; then
                     setprop vendor.netflix.bsp_rev "Q8450-34634-1"
                 fi
                 ;;
             *)
                 setprop vendor.media.target_variant "_taro"
-                if [ $build_codename -le "14" ]; then
+                if [ $build_codename -le "15" ]; then
                     setprop vendor.netflix.bsp_rev "Q8450-34634-1"
                 fi
                 ;;
