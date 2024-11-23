@@ -3,7 +3,7 @@
         "remote"       : "github",
         "repository"   : "Evolution-X-Devices/device_xiaomi_mondrian",
         "target_path"  : "device/xiaomi/mondrian",
-        "branch"       : "udc"
+        "branch"       : "vic"
     },
     { 
         "remote"       : "github",
@@ -21,7 +21,7 @@
         "remote"       : "github",
         "repository"   : "Evolution-X-Devices/vendor_xiaomi_mondrian",
         "target_path"  : "vendor/xiaomi/mondrian",
-        "branch"       : "udc"
+        "branch"       : "vic"
     },
     { 
         "remote"       : "github",
