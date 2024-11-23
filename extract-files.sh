@@ -54,6 +54,32 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function append_content() {
+    local file="${1}"
+    local string_to_append="${2}"
+    local found=0
+    
+    if [ ! -f "${file}" ]; then
+        echo "File ${file} not found"
+        return 1
+    fi
+    
+    while IFS= read -r line; do
+        if [ "$line" == "$string_to_append" ]; then
+            found=1
+            break
+        fi
+    done < "${file}"
+
+    if [ $found -eq 0 ]; then
+        if [ -s "${file}" ] && [ "$(tail -c1 "${file}" | xxd -p)" != "0a" ]; then
+            echo "" >> "${file}"
+        fi
+        echo "${string_to_append}" >> "${file}"
+        echo "Appended '${string_to_append}' to ${file}"
+    fi
+}
+
 function blob_fixup() {
     case "${1}" in
         vendor/etc/init/init.embmssl_server.rc)
@@ -86,6 +112,9 @@ function blob_fixup() {
         vendor/bin/hw/dolbycodec2 | vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service | vendor/bin/hw/vendor.qti.media.c2@1.0-service)     
             "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;
+        vendor/lib64/vendor.libdpmframework.so)     
+            "${PATCHELF}" --add-needed "libhidlbase_shim.so" "${2}"
+            ;;
         vendor/etc/qcril_database/upgrade/config/6.0_config.sql)
             [ "$2" = "" ] && return 0
             sed -i '/persist.vendor.radio.redir_party_num/ s/true/false/g' "${2}"
@@ -95,6 +124,9 @@ function blob_fixup() {
             ;;
         vendor/etc/camera/pureView_parameter.xml)
             sed -i 's/=\([0-9]\+\)>/="\1">/g' "${2}"
+            ;;
+        vendor/etc/seccomp_policy/atfwd@2.0.policy | vendor/etc/seccomp_policy/modemManager.policy | vendor/etc/seccomp_policy/sensors-qesdk.policy | vendor/etc/seccomp_policy/wfdhdcphalservice.policy)
+            append_content "${2}" "gettid: 1"
             ;;
     esac
 }
