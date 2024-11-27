@@ -1,6 +1,10 @@
 # Fastcharge
 type sysfs_fastcharge, sysfs_type, fs_type;
 
+# FEAS
+type proc_perfmgr, fs_type, proc_type;
+type sysfs_perfmgr, fs_type, sysfs_type;
+
 # Fingerprint
 type vendor_fingerprint_data_file, data_file_type, file_type;
 type vendor_fingerprint_data_file_fpdump, data_file_type, file_type;

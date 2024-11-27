@@ -1,0 +1,7 @@
+# FEAS
+allow surfaceflinger proc_perfmgr:dir {read search};
+allow surfaceflinger proc_perfmgr:file {open read ioctl};
+allowxperm surfaceflinger proc_perfmgr:file ioctl {
+  FEAS_QUEUE_BEG
+  FEAS_CONNECT
+};

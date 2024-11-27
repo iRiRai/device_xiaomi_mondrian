@@ -196,4 +196,89 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+
+    <string-array name="freq_limit_level_titles">
+        <item>CPU4:2573 - CPU7:2822</item>
+        <item>CPU4:2573 - CPU7:2822</item>
+        <item>CPU4:2573 - CPU7:2707</item>
+        <item>CPU4:2573 - CPU7:2707</item>
+        <item>CPU4:2458 - CPU7:2592</item>
+        <item>CPU4:2458 - CPU7:2592</item>
+        <item>CPU4:2342 - CPU7:2477</item>
+        <item>CPU4:2342 - CPU7:2477</item>
+        <item>CPU4:2342 - CPU7:2477</item>
+        <item>CPU4:2227 - CPU7:2362</item>
+        <item>CPU4:2227 - CPU7:2362</item>
+        <item>CPU4:2112 - CPU7:2246</item>
+        <item>CPU4:2112 - CPU7:2246</item>
+        <item>CPU4:2112 - CPU7:2246</item>
+        <item>CPU4:1997 - CPU7:2131</item>
+        <item>CPU4:1997 - CPU7:2131</item>
+        <item>CPU4:1882 - CPU7:1997</item>
+        <item>CPU4:1882 - CPU7:1997</item>
+        <item>CPU4:1766 - CPU7:1997</item>
+        <item>CPU4:1766 - CPU7:1882</item>
+        <item>CPU4:1651 - CPU7:1882</item>
+        <item>CPU4:1651 - CPU7:1766</item>
+        <item>CPU4:1555 - CPU7:1766</item>
+        <item>CPU4:1555 - CPU7:1651</item>
+        <item>CPU4:1440 - CPU7:1651</item>
+        <item>CPU4:1440 - CPU7:1536</item>
+        <item>CPU4:1325 - CPU7:1536</item>
+        <item>CPU4:1325 - CPU7:1402</item>
+        <item>CPU4:1210 - CPU7:1402</item>
+        <item>CPU4:1210 - CPU7:1286</item>
+        <item>CPU4:1114 - CPU7:1286</item>
+        <item>CPU4:1114 - CPU7:1171</item>
+        <item>CPU4:998 - CPU7:1171</item>
+        <item>CPU4:998 - CPU7:1037</item>
+        <item>CPU4:883 - CPU7:1037</item>
+        <item>CPU4:883 - CPU7:922</item>
+        <item>CPU4:768 - CPU7:922</item>
+        <item>CPU4:768 - CPU7:787</item>
+        <item>CPU4:634 - CPU7:787</item>
+    </string-array>
+
+    <string-array name="freq_limit_level_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+    </string-array>
 </resources>

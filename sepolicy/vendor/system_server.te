@@ -1,0 +1,9 @@
+# FEAS
+allow system_server proc_perfmgr:dir {read search};
+allow system_server proc_perfmgr:file {open read ioctl};
+allowxperm system_server proc_perfmgr:file ioctl {
+  FEAS_QUEUE_BEG
+  FEAS_CONNECT
+};
+allow system_server sysfs_perfmgr:dir r_dir_perms;
+allow system_server sysfs_perfmgr:file rw_file_perms;

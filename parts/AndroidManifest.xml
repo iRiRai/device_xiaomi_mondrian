@@ -76,6 +76,24 @@
                 android:value="1" />
         </activity>
 
+        <activity
+            android:name=".feas.FEASActivity"
+            android:label="@string/feas_title"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.battery" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/feas_summary" />
+            <meta-data
+                android:name="com.android.settings.order"
+                android:value="2" />
+        </activity>
+
         <provider
             android:name=".SummaryProvider"
             android:authorities="org.lineageos.settings.device.summary">

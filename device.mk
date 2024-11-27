@@ -579,6 +579,7 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.qti.display_boot.mondrian.rc \
     init.touch_report.rc \
+    init.sm8475.rc \
     ueventd-odm.rc \
     ueventd.qcom.rc
 

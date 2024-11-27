@@ -28,6 +28,7 @@ import org.lineageos.settings.doze.AodBrightnessService;
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.doze.PocketService;
 import org.lineageos.settings.display.ColorService;
+import org.lineageos.settings.feas.FEASUtils;
 import org.lineageos.settings.thermal.ThermalUtils;
 import org.lineageos.settings.refreshrate.RefreshUtils;
 
@@ -70,5 +71,9 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         displayManager.overrideHdrTypes(Display.DEFAULT_DISPLAY, new int[]{
                 HdrCapabilities.HDR_TYPE_DOLBY_VISION, HdrCapabilities.HDR_TYPE_HDR10,
                 HdrCapabilities.HDR_TYPE_HLG, HdrCapabilities.HDR_TYPE_HDR10_PLUS});
+
+        // FEAS
+        final FEASUtils mFEASUtils = new FEASUtils(context);
+        mFEASUtils.initialize();
     }
 }

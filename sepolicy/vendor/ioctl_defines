@@ -1,0 +1,5 @@
+#####################################
+# perf_ioctl.h : FEAS
+#
+define(`FEAS_QUEUE_BEG', `0x6701')
+define(`FEAS_CONNECT', `0x670f')
