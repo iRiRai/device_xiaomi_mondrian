@@ -195,11 +195,5 @@
             android:permission="PocketService">
         </service>
 
-        <service
-            android:name=".doze.AodBrightnessService"
-            android:exported="true"
-            android:permission="AodBrightnessService">
-        </service>
-
     </application>
 </manifest>
