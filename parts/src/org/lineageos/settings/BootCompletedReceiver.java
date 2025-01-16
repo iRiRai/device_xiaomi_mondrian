@@ -24,7 +24,6 @@ import android.view.Display.HdrCapabilities;
 import org.lineageos.settings.display.ColorService;
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.dolby.DolbyUtils;
-import org.lineageos.settings.doze.AodBrightnessService;
 import org.lineageos.settings.doze.DozeUtils;
 import org.lineageos.settings.doze.PocketService;
 import org.lineageos.settings.display.ColorService;
@@ -59,9 +58,6 @@ public class BootCompletedReceiver extends BroadcastReceiver {
 
         // DisplayFeature
         ColorService.startService(context);
-
-        // AOD
-        AodBrightnessService.startService(context);
 
         // Per app refresh rate
         RefreshUtils.startService(context);
