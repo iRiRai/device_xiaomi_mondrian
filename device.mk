@@ -97,7 +97,6 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libhfp_pal \
     libbatterylistener
 
 PRODUCT_COPY_FILES += \
@@ -663,3 +662,12 @@ PRODUCT_PACKAGES += \
 # XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
+
+# GMS
+$(call inherit-product-if-exists, vendor/gms/gms.mk)
+
+# EXTRAS
+$(call inherit-product-if-exists, vendor/extras/extras.mk)
+
+# LineageOS
+TARGET_EXCLUDES_AUDIOFX := true
