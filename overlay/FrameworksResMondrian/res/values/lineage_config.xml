@@ -9,4 +9,7 @@
           booted.  -->
     <integer name="config_stableDeviceDisplayWidth">1440</integer>
     <integer name="config_stableDeviceDisplayHeight">3200</integer>
+    
+    <!-- Whether the device supports wireless charging or not -->
+    <bool name="config_deviceSupportsWirelessCharging">true</bool>
 </resources>
