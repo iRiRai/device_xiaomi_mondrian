@@ -468,3 +468,13 @@ wifi.aware.interface=wifi-aware0
 
 # Zygote
 zygote.critical_window.minute=10
+
+# Fingerprint
+persist.vendor.fingerprint.type=udfps_optical
+persist.vendor.fingerprint.sensor_location=720|2882|124
+
+# Sensors
+ro.vendor.sensors.xiaomi.udfps=true
+
+# System properties
+ro.product.property_source_order=odm,vendor,product,system_ext,system
