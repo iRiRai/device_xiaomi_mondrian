@@ -655,8 +655,7 @@ endif
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libnl \
-    libwfdaac_vendor
+    libwfdaac_vendor:64
 
 # XiaomiParts
 PRODUCT_PACKAGES += \
